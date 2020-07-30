@@ -67,3 +67,12 @@ ul.navbar li a:hover{
   border-color: var(--foreground);
   padding-bottom: 2px;
 }
+
+.article-content a{
+  text-decoration: none;
+  color: var(--color10);
+}
+
+.article-content a:hover{
+  color: var(--foreground);
+}
