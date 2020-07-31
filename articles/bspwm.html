@@ -21,8 +21,9 @@
 <p><a href="https://github.com/baskerville/bspwm">bspwm</a> is a manual tiling window manager (WM).</p>
 <p>Basically when you open a new window the WM decides the size and position of the window. Tiling means that none of the windows overlap, they ‘tile’ next to each other in a sort of grid formation. There are many great tiling window managers out there but I use bspwm.</p>
 <p>When bspwm starts up it runs a script named <code>bspwmrc</code>. It’s a bash script where you can run commmands to change the look and feel of bspwm. You can also place some startup commands in it.</p>
-<span class="note"><p>Note: bspwm doesn’t come with a way to control it. i.e None of your keys will work You’ll need to install a hotkey deamon (software that runs in the background) such as sxhkd to manipulate windows.</p></span>
+<span class="note"><p>Note: bspwm doesn’t come with a way to control it. i.e None of your keys will work You’ll need to install a hotkey daemon (software that runs in the background) such as sxhkd to manipulate windows.</p></span>
 <h4>Here’s mine</h4>
+<div class="multi-code">
 <div class="highlight"><pre>
 <span class="ch">#!/bin/sh</span>
 bspc monitor -d I II III IV V
@@ -64,7 +65,7 @@ python3 ~/bin/anime/getJSON.py
 <h4>So what is it doing?</h4>
 <p><code>bspc monitor -d I II III IV V</code></p>
 <p>This creates 5 workspaces that I can switch between. You can have up to 10 workspaces however I choose to use 5.</p>
-
+</div>
 <div class=multi-code>
 <span class="c1"># Spacing</span>
 <br>bspc config border_width&emsp; &emsp;<span class="m">5</span>
