@@ -1,9 +1,11 @@
-@import "colours.css"; 
+@import "colours.css";
+@import "code.css";
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 body{
   background-color: var(--background);
   font-family: 'Inconsolata', monospace;
+  font-size: 17px;
   color: var(--foreground);
 }
 
@@ -23,10 +25,11 @@ ul.navbar li{
 }
 
 ul.navbar li a{
+  font-size: 20px;
 	display: block;
   color: var(--color2);
   text-align: center;
-  padding: 14px 16px;
+  padding: 21px;
   text-decoration: none;
 }
 
@@ -80,5 +83,29 @@ img{
 
 .article-content a:hover{
   color: var(--foreground);
+}
+
+.note{
+  border-width: 0 0 0 3px;
+  border-style: solid;
+  border-color: var(--color9);
+  padding-left: 10px;
+  padding-right: 10px; 
+  background-color: var(--codebg);
+  display: inline-block;
+}
+
+code {
+  background-color: var(--codebg);
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 14px;  
+}
+
+.multi-code {
+  background-color: var(--codebg);
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
