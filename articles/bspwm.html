@@ -67,11 +67,11 @@ python3 ~/bin/anime/getJSON.py
 <p><code>bspc monitor -d I II III IV V</code></p>
 <p>This creates 5 workspaces that I can switch between. You can have up to 10 workspaces however I choose to use 5.</p>
 
-<div class=multi-code>
+<div class=multi-code> 
 <span class="c1"># Spacing</span>
 <br>bspc config border_width&emsp; &emsp;<span class="m">5</span>
 <br>bspc config window_gap&emsp; &emsp;	<span class="m">12</span>
-<br>bspc config top_padding&emsp; &emsp;<span class="m">40</span>
+<br>bspc config top_padding&emsp; &emsp;  <span class="m">40</span>
 </div>
 <p>The first command sets the width of the borders around the windows, the second sets the gap between tiled windows</p>
 <p>The third command sets the padded space at the top of the screen. You'll want to set this if you have a bar or else the window will just cover it</p>
@@ -81,9 +81,11 @@ python3 ~/bin/anime/getJSON.py
 <br>bspc config split_ratio&emsp; &emsp;&emsp;&emsp;&emsp;<span class="m">0.52</span>
 <br>bspc config borderless_monocle&emsp;&emsp;<span class="nb">true</span>
 <br>bspc config gapless_monocle&emsp;&emsp;&emsp;  <span class="nb">true</span>
-</span></p>
 </div>
 <p>This first line sets the split ratio. This if you had 1 window and opened another this would decide what proportion of the screen the second window would occupy.</p>
+
+<p><code>bspc config focused_border_color <span class="s2">&quot;#B0BFD1&quot;</span></code></p>
+<p>This sets the colour of the border when the window is focused.</p>
 
 <h4>What about the rest?</h4>
 <p>The remainder are startup commands. I'll try and cover these in another post</p>
