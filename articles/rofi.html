@@ -18,12 +18,9 @@
   <H4>Written on: 05-08-2020</H4>
  </div>
  <div class="article-content">
-  <p><a href="https://github.com/davatorium/rofi">rofi</a> is a multipurpose menu application. It switches windows, launches apps, and much more.</p>
-  <p>One interesting function of rofi is creating custom menus. In order to do so you need to use the <code>-dmenu</code> flag on rofi.</p>
-  <p>First you’ll need to pass in your options you want to display on the screen.</p>
-  <p>After the selection is chosen, the choice is outputed in <code>STDOUT</code>. This means that you can take the input and perform an action based on the output.</p>
-  <p>It’ll be clearer if you see an example.</p>
-  <p>Below is a script using rofi to take a screenshot.</p>
+  <p><a href="https://github.com/davatorium/rofi">rofi</a> is a menu application. It switches windows, launches apps, and much much more. One function of rofi is creating custom menus. In order to do so you'll need to use the <code>-dmenu</code> flag. First you’ll pass in the options you want to display on the screen. After the selection is chosen, the choice is outputted in <code>STDOUT</code>. This allows you to take the output and perform an action based on the selection.</p>
+  
+  <p>It’ll be clearer if you see an example. Below is a script using rofi to take a screenshot.</p>
 <!----------------------------------------- CODE BLOCK START -------------------------------------------------------------------->
 <div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 <span class="nv">rofi_command</span><span class="o">=</span><span class="s2">&quot;rofi -theme </span><span class="nv">$HOME</span><span class="s2">/bin/rofi-menus/scrot/scrot-menu.rasi -dmenu&quot;</span>
@@ -97,8 +94,8 @@
    <br><span class="nv">options</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$screenClip</span><span class="s2">\n</span><span class="nv">$screenFile</span><span class="s2">\n</span><span class="nv">$windowClip</span><span class="s2">\n</span><span class="nv">$windowFile</span><span class="s2">\n</span><span class="nv">$areaClip</span><span class="s2">\n</span><span class="nv">$areaFile</span><span class="s2">&quot;</span>
 </div>
   <p>This is then piped into the rofi command we defined earlier.</p>
-  <p><code>echo -e</code> outputs our options without displaying the newline characters.</p>
-  <p><code>-p</code> is to set the prompt text and <code>-i</code> makes it case insensitive.</p>
+  <code><span class="nv">chosen</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span><span class="nb">echo</span> -e <span class="s2">&quot;</span><span class="nv">$options</span><span class="s2">&quot;</span> <span class="p">|</span> <span class="nv">$rofi_command</span> -p <span class="s2">&quot;Screenshot&quot;</span> -i<span class="k">)</span><span class="s2">&quot;</span></code>
+  <p><code>echo -e</code> outputs our options without displaying the newline characters, <code>-p</code> is to set the prompt text and <code>-i</code> makes it case insensitive.</p>
   <p>Once the user makes a selection, the output is then stored. We then can use a switch case statement to perform an action based on which option was picked.</p>
 
 <div class=multi-code>
@@ -142,7 +139,7 @@
   <figure>
   <img src="https://rchu.cc/img/rofi/rofi.gif" alt=""><figcaption>rofi menu</figcaption>
   </figure>
-  <p>The basic idea of this can be used for anything you can think of. Sky’s the limit.</p>
+  <p>The basic idea of this can be used for anything you can think of. The sky’s the limit.</p>
  </div>
  <hr>
  <b>If I've gotten anything wrong and you want to let me know, or if you wanna just ask me a question find me at rickychu1001@gmail.com</b>
