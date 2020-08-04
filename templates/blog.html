@@ -11,27 +11,13 @@
 	<li><a href="https://rchu.cc/blog.html">blog</a></li>
 	<li><a href="https://rchu.cc/dots.html">dotfiles</a></li>
 </ul>
-
-<a href="https://rchu.cc/articles/rofi.html">
+{% for post in postList %}
+<a href="{{ post.href }}">
 	<div class="blog-box">
-		<h2>custom rofi menus</h2>
-		<h3>Written on: 05-08-2020</h3>
+		<h2>{{ post.title }}</h2>
+		<h3>Written on: {{ post.date }}</h3>
 	</div>
 </a>
-
-<a href="https://rchu.cc/articles/bspwm.html">
-	<div class="blog-box">
-		<h2>my bspwm setup</h2>
-		<h3>Written on: 31-07-2020</h3>
-	</div>
-</a>
-
-<a href="https://rchu.cc/articles/spotify.html">
-	<div class="blog-box">
-		<h2>spotify on linux</h2>
-		<h3>Written on: 01-07-2020</h3>
-	</div>
-</a>
-
+{% endfor %}
 </body>
 </html>

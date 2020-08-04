@@ -11,7 +11,7 @@
 
 .c { color: var(--color12); font-style: italic } /* Comment */
 .err { border: 1px solid #FF0000 } /* Error */
-.k { color: #008000; font-weight: bold } /* Keyword */
+.k { color: var(--color4); font-weight: bold } /* Keyword */
 .o { color: var(--foreground) } /* Operator */
 .ch { color: var(--color12); font-style: italic } /* Comment.Hashbang */
 .cm { color: var(--color12); font-style: italic } /* Comment.Multiline */

@@ -121,9 +121,13 @@ code {
 }
 
 .multi-code {
+  font-size: 17px;
   background-color: var(--codebg);
   padding: 5px;
   border-radius: 4px;
   display: inline-block;
+  display: inline-block;
+  position: relative;
+
 }
 
