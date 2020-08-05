@@ -1,6 +1,6 @@
 ---
 title: spotify on linux
-date: 01-07-2020
+date: 01-08-2020
 ---
 
 I use spotify, I think it's a pretty good service. I've tried 3 different forms of spotify on my system.
