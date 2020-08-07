@@ -25,14 +25,12 @@ mdVars = []
 
 for file in os.listdir(articleDirPath):
     if file.endswith(".md"):
-    	articlePath = os.path.join(articleDirPath, file)
-    	with open(articlePath, "r") as article:
-    		extractMDVars(article.read(), mdVars, file)
+        articlePath = os.path.join(articleDirPath, file)
+        print(f"adding {articlePath}")
+        with open(articlePath, "r") as article:
+            extractMDVars(article.read(), mdVars, file)
 
 mdVars.sort(key=lambda item:datetime.strptime(item["date"], "%d-%m-%Y"), reverse=True)
-
-for item in mdVars:
-    print(item["date"])
 
 template = open(templatePath, "r")
 j2_template = Template(template.read())

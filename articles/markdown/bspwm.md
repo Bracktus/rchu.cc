@@ -12,7 +12,7 @@ they 'tile' next to each other in a sort of grid formation. There are
 many great tiling window managers out there but I use bspwm.
 
 When bspwm starts up it runs a script named `bspwmrc`. It's a bash
-script where you can run commmands to change the look and feel of bspwm.
+script where you can run commands to change the look and feel of bspwm.
 You can also place some startup commands in it.
 
 

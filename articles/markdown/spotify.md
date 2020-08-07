@@ -9,7 +9,7 @@ I use spotify, I think it's a pretty good service. I've tried 3 different forms 
 2. Using spotifyd (spotify premium only)
 3. Using ncspot (spotify premium only)
 
-The desktop app is pretty decent. It comes with desktop notifications and just works out of the box. If you dislike the look of it you can use [spicetify](https://github.com/khanhas/spicetify-cli) to customise it. This include changing the colours and layout of the client, removing uneccesary features and even injecting additional functionality. 
+The desktop app is pretty decent. It comes with desktop notifications and just works out of the box. If you dislike the look of it you can use [spicetify](https://github.com/khanhas/spicetify-cli) to customise it. This include changing the colours and layout of the client, removing unnecessary features and even injecting additional functionality. 
 
 [Spotifyd](https://github.com/Spotifyd/spotifyd) is a spotify daemon. Basically it's an instance of spotify that runs in the background. It's super lightweight so it doesn't come with a client. You'll need to install one like [spotify-tui](https://github.com/Rigellute/spotify-tui) or just use your phone with spotify connect to queue songs. It doesn't come with desktop notifications so you can use the spotify API or [playerctl](https://github.com/altdesktop/playerctl) to create your own. 
 

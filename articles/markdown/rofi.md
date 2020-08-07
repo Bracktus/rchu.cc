@@ -9,7 +9,7 @@ One interesting function of rofi is creating custom menus. In order to do so you
 
 First you'll need to pass in your options you want to display on the screen. 
 
-After selection is chosen, the choice is outputed in `STDOUT`. This means that you can take the input and perform an action based on the output.
+After selection is chosen, the choice is outputted in `STDOUT`. This means that you can take the input and perform an action based on the output.
 
 It'll be clearer if you see an example.
 
