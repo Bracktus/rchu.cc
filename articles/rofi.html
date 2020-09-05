@@ -22,6 +22,7 @@
   
   <p>It’ll be clearer if you see an example. Below is a script using rofi to take a screenshot.</p>
 <!----------------------------------------- CODE BLOCK START -------------------------------------------------------------------->
+<div class=multi-code>
 <div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 <span class="nv">rofi_command</span><span class="o">=</span><span class="s2">&quot;rofi -theme </span><span class="nv">$HOME</span><span class="s2">/bin/rofi-menus/scrot/scrot-menu.rasi -dmenu&quot;</span>
 
@@ -72,7 +73,7 @@
     notify-send -i <span class="s2">&quot;~/pics/misc/cheese.png&quot;</span> <span class="s2">&quot;Cheese!&quot;</span> <span class="s2">&quot;Saved to ~/pics/screenshots&quot;</span>
     <span class="p">;;</span>
 <span class="k">esac</span>
-</div>
+</div></div>
 <!----------------------------------------- CODE BLOCK END -------------------------------------------------------------------->
   <h3>So how does it work?</h3>
   <p>First we define the command. I also specify a theme so that it looks nice.</p>
