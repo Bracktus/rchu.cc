@@ -15,12 +15,10 @@ When bspwm starts up it runs a script named `bspwmrc`. It's a bash
 script where you can run commands to change the look and feel of bspwm.
 You can also place some startup commands in it.
 
-
 ::: {.note}
-Note: bspwm doesn't come with a way to control it. i.e None of your keys
-will work You'll need to install a hotkey daemon (software that runs in
-the background) such as sxhkd to manipulate windows.
+Note: bspwm doesn't come with a way to control it. I.e None of your keys will work, you'll need to install a hotkey daemon such as sxhkd to manipulate windows.
 :::
+
 ## Here's mine
 
 ~~~
@@ -30,17 +28,17 @@ the background) such as sxhkd to manipulate windows.
 bspc monitor -d I II III IV V
 
 #Spacing
-bspc config border\_width         5
-bspc config window\_gap          12
-bspc config top\_padding         40
+bspc config border_width         5
+bspc config window_gap          12
+bspc config top_padding         40
 
 #Misc
-bspc config split\_ratio          0.52
-bspc config borderless\_monocle   true
-bspc config gapless\_monocle      true
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
 
 #Colours
-bspc config focused\_border\_color "#B0BFD1"
+bspc config focused_border_color "#B0BFD1"
 
 #Rule
 bspc rule -a Gimp desktop='^8' state=floating follow=on
@@ -75,7 +73,11 @@ python3 ~/bin/anime/getJSON.py
 
 ## So what is it doing?
 
-`bspc monitor -d I II III IV V`
+~~~
+
+bspc monitor -d I II III IV V
+
+~~~
 
 This creates 5 workspaces that I can switch between. You can have up to
 10 workspaces however I choose to use 5.
@@ -83,9 +85,9 @@ This creates 5 workspaces that I can switch between. You can have up to
 ~~~
 
 #Spacing
-bspc config border\_width         5
-bspc config window\_gap          12
-bspc config top\_padding         40
+bspc config border_width         5
+bspc config window_gap          12
+bspc config top_padding         40
 
 ~~~
 
@@ -100,9 +102,9 @@ cover it
 ~~~
 
 #Misc
-bspc config split\_ratio          0.52
-bspc config borderless\_monocle   true
-bspc config gapless\_monocle      true
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
 
 ~~~
 

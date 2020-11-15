@@ -15,6 +15,6 @@ The desktop app is pretty decent. It comes with desktop notifications and just w
 
 [ncspot](https://github.com/hrkfdn/ncspot) is what I currently use. It's a ncurses spotify client. It's lightweight and runs in your terminal. Like spotifyd it doesn't come with desktop notification so you'll need to use the method below to add them. You can customise the colours and *some* of the keybindings in `~/.config/ncspot/config.toml`.  I've set up some global keybinds with playerctl that pause/resume skip and rewind. 
 
-[Here's](https://rchu.cc/examples/spotify.notif.py) how I added desktop notifications to spotifyd and ncspot.
+[Here's](https://rchu.cc/examples/spotify/notif.py) how I added desktop notifications to spotifyd and ncspot.
 
 Check [this](https://wiki.archlinux.org/index.php/Spotify) out for more info on spotify on linux.
