@@ -20,7 +20,7 @@
         <p>Basically when you open a new window the WM decides the size and position of the window. Tiling means that none of the windows overlap, they ‘tile’ next to each other in a sort of grid formation. There are many great tiling window managers out there but I use bspwm.</p>
         <p>When bspwm starts up it runs a script named <code>bspwmrc</code>. It’s a bash script where you can run commands to change the look and feel of bspwm. You can also place some startup commands in it.</p>
         <div class="note">
-        <p>Note: bspwm doesn’t come with a way to control it. i.e None of your keys will work You’ll need to install a hotkey daemon (software that runs in the background) such as sxhkd to manipulate windows.</p>
+        <p>Note: bspwm doesn’t come with a way to control it. I.e None of your keys will work, you’ll need to install a hotkey daemon such as sxhkd to manipulate windows.</p>
         </div>
         <h2 id="heres-mine">Here’s mine</h2>
         <pre><code>
@@ -29,17 +29,17 @@
         bspc monitor -d I II III IV V
 
         #Spacing
-        bspc config border\_width         5
-        bspc config window\_gap          12
-        bspc config top\_padding         40
+        bspc config border_width         5
+        bspc config window_gap          12
+        bspc config top_padding         40
 
         #Misc
-        bspc config split\_ratio          0.52
-        bspc config borderless\_monocle   true
-        bspc config gapless\_monocle      true
+        bspc config split_ratio          0.52
+        bspc config borderless_monocle   true
+        bspc config gapless_monocle      true
 
         #Colours
-        bspc config focused\_border\_color &quot;#B0BFD1&quot;
+        bspc config focused_border_color &quot;#B0BFD1&quot;
 
         #Rule
         bspc rule -a Gimp desktop=&#39;^8&#39; state=floating follow=on
@@ -71,21 +71,23 @@
         python3 ~/bin/anime/getJSON.py
         </code></pre>
         <h2 id="so-what-is-it-doing">So what is it doing?</h2>
-        <p><code>bspc monitor -d I II III IV V</code></p>
+        <pre><code>
+        bspc monitor -d I II III IV V
+        </code></pre>
         <p>This creates 5 workspaces that I can switch between. You can have up to 10 workspaces however I choose to use 5.</p>
         <pre><code>
         #Spacing
-        bspc config border\_width         5
-        bspc config window\_gap          12
-        bspc config top\_padding         40
+        bspc config border_width         5
+        bspc config window_gap          12
+        bspc config top_padding         40
         </code></pre>
         <p>The first command sets the width of the borders around the windows, the second sets the gap between tiled windows</p>
         <p>The third command sets the padded space at the top of the screen. You'll want to set this if you have a bar or else the window will just cover it</p>
         <pre><code>
         #Misc
-        bspc config split\_ratio          0.52
-        bspc config borderless\_monocle   true
-        bspc config gapless\_monocle      true
+        bspc config split_ratio          0.52
+        bspc config borderless_monocle   true
+        bspc config gapless_monocle      true
         </code></pre>
         <p>This first line sets the split ratio. This if you had 1 window and opened another this would decide what proportion of the screen the second window would occupy.</p>
         <h2 id="what-about-the-rest">What about the rest?</h2>
