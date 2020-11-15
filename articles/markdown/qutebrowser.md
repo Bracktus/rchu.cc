@@ -12,7 +12,7 @@ It's also really customisable. You can change the look and feel of it in python 
 It's a really nice experience, however it does have some issues. 
 
 1. No extentions
-2. You can't do everything without a mouse
+2. You can't do *everything* without a mouse
 
 ## extentions
 
