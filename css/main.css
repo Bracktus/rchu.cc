@@ -15,7 +15,7 @@ body{
 
 a{
     color: black;
-    text-decoration: none;  
+    text-decoration: underline;
 }
 
 ul.navbar {
@@ -29,6 +29,7 @@ ul.navbar li a{
   font-size: 20px;
   color: black;
   padding: 0px 20px;
+  text-decoration: none;  
 }
 
 ul.navbar li a:hover{

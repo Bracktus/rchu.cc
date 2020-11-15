@@ -14,13 +14,13 @@ It's a really nice experience, however it does have some issues.
 1. No extentions
 2. You can't do everything without a mouse
 
-## Extentions
+## extentions
 
 No extentions means no 'https everywhere', no 'ublock origin' or tracking protection. This really sucks, especially the adblocking. 
 
 Qutebrowser comes with a list of hosts that serves ads and blocks them. However, this doesn't cover all ads and it doesn't cover YouTube ads. 
 
-## Mouseless?
+## mouseless?
 
 A lot of websites have interactive javascript and you can't interact with them using the keybinds. You'll find yourself reaching for the mouse in certain situations. It isn't a huge issue but it is annoying.
 
