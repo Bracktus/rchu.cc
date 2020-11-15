@@ -2,37 +2,31 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<title>rchu.cc - spotify</title>
+    <title>spotify on linux</title>
 </head>
 <body>
-<ul class="navbar">
-	<li><a href="https://rchu.cc/">rchu.cc</a></li>
-	<li><a href="https://github.com/Bracktus">code</a></li>
-	<li><a href="https://rchu.cc/blog.html">blog</a></li>
-	<li><a href="https://rchu.cc/dots.html">dotfiles</a></li>
-</ul>
-</div>
-<div class="article">
-	<div class="article-header">
-		<H1>spotify on linux</H1>
-		<H4>Written on: 01-08-2020</H4>
-	</div>
-	<div class="article-content">
-		<p>I use spotify, I think it’s a pretty good service. I’ve tried 3 different forms of spotify on my system.</p>
-  <ol type="1">
-  <li>Using the official desktop app</li>
-  <li>Using spotifyd (spotify premium only)</li>
-  <li>Using ncspot (spotify premium only)</li>
-  </ol>
-  <p>The desktop app is pretty decent. It comes with desktop notifications and just works out of the box. If you dislike the look of it you can use <a href="https://github.com/khanhas/spicetify-cli">spicetify</a> to customise it. This include changing the colours and layout of the client. Removing uneccesary features and even injecting additional functionality.</p>
-  <p><a href="https://github.com/Spotifyd/spotifyd">spotifyd</a> is a spotify daemon. Basically it’s an instance of spotify that runs in the background. It’s super lightweight so it doesn’t come with a client. You’ll need to install one like <a href="https://github.com/Rigellute/spotify-tui">spotify-tui</a> or just use your phone with spotify connect to queue songs. It doesn’t come with desktop notifications so you can use the spotify API or <a href="https://github.com/altdesktop/playerctl">playerctl</a> to create your own.</p>
-  <p>Here’s a link to <a href="https://rchu.cc/examples/spotify/notif.py">my script</a> if you wanna see how I did it.</p>
-  <p><a href="https://github.com/hrkfdn/ncspot">ncspot</a> is what I currently use. It’s a ncurses spotify client. It’s lightweight and runs in your terminal. Like spotifyd it doesn’t come with desktop notification so you’ll need to use the method above to add them.</p>
-  <p>You can customise the colours and <em>some</em> of the keybindings in <code>~/.config/ncspot/config.toml</code>. I’ve set up some global keybinds with playerctl that pause/resume skip and rewind.</p>
-  <p>Check <a href="https://wiki.archlinux.org/index.php/Spotify">this</a> out for more more info on spotify on linux.</p>
-	</div>
-	<hr>
-	<b>If I've gotten anything wrong and you want to let me know, or if you wanna just ask me a question find me at rickychu1001@gmail.com</b>
-</div>
+   
+    <ul class="navbar">
+        <li><a href="https://rchu.cc/">rchu.cc</a></li>
+        <li><a href="https://github.com/Bracktus">code</a></li>
+    </ul>
+    
+    <div class="article">
+        <div class="article-header">
+            <H1>spotify on linux</H1>
+            <H4>01-08-2020</H4>
+        </div>
+        <p>I use spotify, I think it’s a pretty good service. I’ve tried 3 different forms of spotify on my system.</p>
+        <ol type="1">
+        <li>Using the official desktop app</li>
+        <li>Using spotifyd (spotify premium only)</li>
+        <li>Using ncspot (spotify premium only)</li>
+        </ol>
+        <p>The desktop app is pretty decent. It comes with desktop notifications and just works out of the box. If you dislike the look of it you can use <a href="https://github.com/khanhas/spicetify-cli">spicetify</a> to customise it. This include changing the colours and layout of the client, removing unnecessary features and even injecting additional functionality.</p>
+        <p><a href="https://github.com/Spotifyd/spotifyd">Spotifyd</a> is a spotify daemon. Basically it’s an instance of spotify that runs in the background. It’s super lightweight so it doesn’t come with a client. You’ll need to install one like <a href="https://github.com/Rigellute/spotify-tui">spotify-tui</a> or just use your phone with spotify connect to queue songs. It doesn’t come with desktop notifications so you can use the spotify API or <a href="https://github.com/altdesktop/playerctl">playerctl</a> to create your own.</p>
+        <p><a href="https://github.com/hrkfdn/ncspot">ncspot</a> is what I currently use. It’s a ncurses spotify client. It’s lightweight and runs in your terminal. Like spotifyd it doesn’t come with desktop notification so you’ll need to use the method below to add them. You can customise the colours and <em>some</em> of the keybindings in <code>~/.config/ncspot/config.toml</code>. I’ve set up some global keybinds with playerctl that pause/resume skip and rewind.</p>
+        <p><a href="https://rchu.cc/examples/spotify.notif.py">Here’s</a> how I added desktop notifications to spotifyd and ncspot.</p>
+        <p>Check <a href="https://wiki.archlinux.org/index.php/Spotify">this</a> out for more info on spotify on linux.</p>
+    </div>
 </body>
 </html>

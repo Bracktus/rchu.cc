@@ -2,95 +2,94 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
-	<title>rchu.cc - my bspwm setup</title>
+    <title>my bspwm setup</title>
 </head>
 <body>
-<ul class="navbar">
-	<li><a href="https://rchu.cc/">rchu.cc</a></li>
-	<li><a href="https://github.com/Bracktus">code</a></li>
-	<li><a href="https://rchu.cc/blog.html">blog</a></li>
-	<li><a href="https://rchu.cc/dots.html">dotfiles</a></li>
-</ul>
-</div>
-<div class="article">
-<div class="article-header">
-<H1>my bspwm setup</H1>
-<H4>Written on: 31-07-2020</H4>
-</div>
-<div class="article-content">
-	<p><a href="https://github.com/baskerville/bspwm">bspwm</a> is a manual tiling window manager (WM).</p>
- <p>Basically when you open a new window the WM decides the size and position of the window. Tiling means that none of the windows overlap, they ‘tile’ next to each other in a sort of grid formation. There are many great tiling window managers out there but I use bspwm.</p>
- <p>When bspwm starts up it runs a script named <code>bspwmrc</code>. It’s a bash script where you can run commands to change the look and feel of bspwm. You can also place some startup commands in it.</p>
- <div class="note">
- <p>Note: bspwm doesn’t come with a way to control it. i.e None of your keys will work You’ll need to install a hotkey daemon (software that runs in the background) such as sxhkd to manipulate windows.</p>
- </div>
- <h2 id="heres-mine">Here’s mine</h2>
- <pre><code>
- #!/bin/sh
+   
+    <ul class="navbar">
+        <li><a href="https://rchu.cc/">rchu.cc</a></li>
+        <li><a href="https://github.com/Bracktus">code</a></li>
+    </ul>
+    
+    <div class="article">
+        <div class="article-header">
+            <H1>my bspwm setup</H1>
+            <H4>31-07-2020</H4>
+        </div>
+        <p><a href="https://github.com/baskerville/bspwm">bspwm</a> is a manual tiling window manager (WM).</p>
+        <p>Basically when you open a new window the WM decides the size and position of the window. Tiling means that none of the windows overlap, they ‘tile’ next to each other in a sort of grid formation. There are many great tiling window managers out there but I use bspwm.</p>
+        <p>When bspwm starts up it runs a script named <code>bspwmrc</code>. It’s a bash script where you can run commands to change the look and feel of bspwm. You can also place some startup commands in it.</p>
+        <div class="note">
+        <p>Note: bspwm doesn’t come with a way to control it. i.e None of your keys will work You’ll need to install a hotkey daemon (software that runs in the background) such as sxhkd to manipulate windows.</p>
+        </div>
+        <h2 id="heres-mine">Here’s mine</h2>
+        <pre><code>
+        #!/bin/sh
 
- bspc monitor -d I II III IV V
+        bspc monitor -d I II III IV V
 
- #Spacing
- bspc config border\_width         5
- bspc config window\_gap          12
- bspc config top\_padding         40
+        #Spacing
+        bspc config border\_width         5
+        bspc config window\_gap          12
+        bspc config top\_padding         40
 
- #Misc
- bspc config split\_ratio          0.52
- bspc config borderless\_monocle   true
- bspc config gapless\_monocle      true
+        #Misc
+        bspc config split\_ratio          0.52
+        bspc config borderless\_monocle   true
+        bspc config gapless\_monocle      true
 
- #Colours
- bspc config focused\_border\_color &quot;#B0BFD1&quot;
+        #Colours
+        bspc config focused\_border\_color &quot;#B0BFD1&quot;
 
- #Rule
- bspc rule -a Gimp desktop=&#39;^8&#39; state=floating follow=on
- bspc rule -a Chromium desktop=&#39;^2&#39;
- bspc rule -a mplayer2 state=floating
- bspc rule -a Kupfer.py focus=on
- bspc rule -a Screenkey manage=off
- bspc rule -a Zathura state=tiled
+        #Rule
+        bspc rule -a Gimp desktop=&#39;^8&#39; state=floating follow=on
+        bspc rule -a Chromium desktop=&#39;^2&#39;
+        bspc rule -a mplayer2 state=floating
+        bspc rule -a Kupfer.py focus=on
+        bspc rule -a Screenkey manage=off
+        bspc rule -a Zathura state=tiled
 
- #Autostart----------------------------------
+        #Autostart----------------------------------
 
- #Kill if already running 
- killall -9 sxhkd dunst picom
- pkill -f music-notification.py
+        #Kill if already running 
+        killall -9 sxhkd dunst picom
+        pkill -f music-notification.py
 
- #Launching daemons
- sxhkd &amp;
- dunst &amp;
- picom -b 
- python3 ~/bin/music-notification.py &amp;
+        #Launching daemons
+        sxhkd &amp;
+        dunst &amp;
+        picom -b 
+        python3 ~/bin/music-notification.py &amp;
 
- #Setting wallpaper
- feh --bg-scale --no-fehbg ~/pics/wallpapers/aleksovannaCrybaby.jpg
+        #Setting wallpaper
+        feh --bg-scale --no-fehbg ~/pics/wallpapers/aleksovannaCrybaby.jpg
 
- #Launching bar
- ~/.config/polybar/launch.sh
+        #Launching bar
+        ~/.config/polybar/launch.sh
 
- #Airing anime fetcher
- python3 ~/bin/anime/getJSON.py</code></pre>
- <h2 id="so-what-is-it-doing">So what is it doing?</h2>
- <p><code>bspc monitor -d I II III IV V</code></p>
- <p>This creates 5 workspaces that I can switch between. You can have up to 10 workspaces however I choose to use 5.</p>
- <pre><code>
- #Spacing
- bspc config border\_width         5
- bspc config window\_gap          12
- bspc config top\_padding         40
- </code></pre>
- <p>The first command sets the width of the borders around the windows, the second sets the gap between tiled windows</p>
- <p>The third command sets the padded space at the top of the screen. You'll want to set this if you have a bar or else the window will just cover it</p>
- <pre><code>
- #Misc
- bspc config split\_ratio          0.52
- bspc config borderless\_monocle   true
- bspc config gapless\_monocle      true
- </code></pre>
- <p>This first line sets the split ratio. This if you had 1 window and opened another this would decide what proportion of the screen the second window would occupy.</p>
- <h2 id="what-about-the-rest">What about the rest?</h2>
- <p>The remainder are startup commands. I'll try and cover these in another post</p>
-</div>
+        #Airing anime fetcher
+        python3 ~/bin/anime/getJSON.py
+        </code></pre>
+        <h2 id="so-what-is-it-doing">So what is it doing?</h2>
+        <p><code>bspc monitor -d I II III IV V</code></p>
+        <p>This creates 5 workspaces that I can switch between. You can have up to 10 workspaces however I choose to use 5.</p>
+        <pre><code>
+        #Spacing
+        bspc config border\_width         5
+        bspc config window\_gap          12
+        bspc config top\_padding         40
+        </code></pre>
+        <p>The first command sets the width of the borders around the windows, the second sets the gap between tiled windows</p>
+        <p>The third command sets the padded space at the top of the screen. You'll want to set this if you have a bar or else the window will just cover it</p>
+        <pre><code>
+        #Misc
+        bspc config split\_ratio          0.52
+        bspc config borderless\_monocle   true
+        bspc config gapless\_monocle      true
+        </code></pre>
+        <p>This first line sets the split ratio. This if you had 1 window and opened another this would decide what proportion of the screen the second window would occupy.</p>
+        <h2 id="what-about-the-rest">What about the rest?</h2>
+        <p>The remainder are startup commands. I'll try and cover these in another post</p>
+    </div>
 </body>
 </html>
