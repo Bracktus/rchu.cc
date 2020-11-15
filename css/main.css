@@ -1,43 +1,38 @@
-@import "colours.css";
-@import "code.css";
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+:root{
+    --background: #efefef
+}
 
 body{
-  background-color: var(--background);
-  font-family: 'Inconsolata', monospace;
-  font-size: 17px;
-  color: var(--foreground);
+    font-family: Consolas, Monospace, Courier;
+    font-size: 16px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background: var(--background);
+    color: black;
+    max-width: 900px;  
+    margin: 0 auto;
 }
 
 a{
-  text-decoration: none;  
+    color: black;
+    text-decoration: none;  
 }
 
 ul.navbar {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   background-color: var(--background);
-  border-width: 0 0 1px 0;
-  border-style: solid;
-  border-color: var(--color9);
-}
-
-ul.navbar li{
-	float: left;
+  display: flex;
+  justify-content: center;
 }
 
 ul.navbar li a{
   font-size: 20px;
-	display: block;
-  color: var(--color2);
-  text-align: center;
-  padding: 21px;
+  color: black;
+  padding: 0px 20px;
 }
 
 ul.navbar li a:hover{
-  color: var(--foreground);
+  color: grey;
 }
 
 img{
@@ -45,89 +40,38 @@ img{
   max-width: 100%;
 }
 
-.textbox{
-  border: 5px;
-  border-style: solid;
-  border-color: var(--color9);
-  margin: 15% auto;
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 100px;
-  max-width:800px;
-}
-
-.textbox p{
-  font-size: 36px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.blog-box {
-  border: 5px;
-  border-style: solid;
-  border-color: var(--color9);
-  margin: 10px;
-  padding: 10px;
-  color: var(--foreground)
-}
-
-a:hover .blog-box{
-  color: var(--background);
-  background-color: var(--color9);
-}
-
 .article {
-  border: 5px;
-  border-style: solid;
-  border-color: var(--color9);
-  margin: 20px;
-  padding: 10px 30px 30px 30px;
+  margin: 50px;
+  padding: 10px 20px 20px 20px;
 }
+
+.article a:hover{
+    color: grey;
+}
+
 
 .article-header H1{
   border-width: 0 0 1px 0;
   border-style: dashed;
-  border-color: var(--foreground);
   padding-bottom: 2px;
 }
 
-.article-content a{
-  color: var(--color10);
-}
-
-.article-content a:hover{
-  color: var(--foreground);
-}
-
 .note{
-  border-width: 0 0 0 3px;
-  border-style: solid;
-  border-color: var(--color9);
-  padding-left: 10px;
-  padding-right: 10px; 
-  background-color: var(--codebg);
-  display: inline-block;
-}
-
-code {
-  font-family: 'Inconsolata', monospace;
-  font-size: 17px;
-  background-color: var(--codebg);
-  padding: 3px;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.multi-code {
-  font-size: 17px;
-  background-color: var(--codebg);
+  border-width: 1px;
+  border-style: dashed;
   padding: 5px;
-  border-radius: 4px;
-  display: inline-block;
-  display: inline-block;
-  position: relative;
+  display: block;
+  background-color: white;
+}
 
+pre code {
+  background-color: white;
+  padding: 3px;
+  display: block;
+}
+
+p code {
+    background-color: white;
+    padding: 3px;
 }
 

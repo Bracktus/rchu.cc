@@ -19,7 +19,7 @@ def extractMDVars(text, varList, filename):
 	varDict["href"] = href
 	varList.append(varDict)	
 
-templatePath = "./templates/blog.html"
+templatePath = "./templates/index.html"
 articleDirPath = "./articles/markdown"
 mdVars = []
 
@@ -38,7 +38,7 @@ template.close()
 
 blogHTML = j2_template.render(postList=mdVars)
 
-with open("blog.html", "w") as newFile:
+with open("index.html", "w") as newFile:
 	newFile.write(blogHTML)
 
-print("created blog.html")
+print("created index.html")

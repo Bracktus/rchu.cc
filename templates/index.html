@@ -8,16 +8,17 @@
 <ul class="navbar">
 	<li><a href="https://rchu.cc/">rchu.cc</a></li>
 	<li><a href="https://github.com/Bracktus">code</a></li>
-	<li><a href="https://rchu.cc/blog.html">blog</a></li>
-	<li><a href="https://rchu.cc/dots.html">dotfiles</a></li>
 </ul>
-{% for post in postList %}
-<a href="{{ post.href }}">
-	<div class="blog-box">
-		<h2>{{ post.title }}</h2>
-		<h3>Written on: {{ post.date }}</h3>
-	</div>
-</a>
+<div class="article">
+    <h2>intro</h2>
+    <p>Hi, i'm Ricky.</p>
+    <p>I'm a 2nd year computer science student.</p>
+    <h2>posts</h2>
+    {% for post in postList %}
+    <a href="{{ post.href }}">
+        <p>[{{ post.date }}] - {{ post.title }}</p>
+    </a>
 {% endfor %}
+</div> 
 </body>
 </html>
