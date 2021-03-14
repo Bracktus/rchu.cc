@@ -5,21 +5,21 @@ date: 14-03-2021
 
 I've been using the Moonlander keyboard for about a week now and I want to share my thoughts on it. I bought it mid February, it was then built and shipped over here in early March. It took about 2 days for it to travel from Taiwan over to the UK. The time taken from clicking 'purchase' and having it in my hands was roughly 2 weeks. 
 
-This is my first mechanical keyboard, I've been using a Corsair K30 for a few years now and it's served me well. However, over the internet and real life I've heard nothing but praise for their clicky switches. After looking at reviews, guides and wiki pages on switches, keycaps and form factors I decided on a ZSA Moonlander.
+This is my first mechanical keyboard, I've been using a Corsair K30 for a few years now and it's served me well. However, over the internet and real life I've heard nothing but praise for clicky switches. After looking at reviews, guides and wiki pages on switches, keycaps and form factors I decided on a ZSA Moonlander.
 
 The Moonlander is a Split Ortholinear keyboard. 
 
-Split means that the keyboard is split into two halves, with a wire connecting them together
+Split means that the keyboard is split into two halves, with a wire connecting them together.
 
-Ortholinear means that the keys are arranged in a matrix layout. On a normal QWERTY keyboard the keys are shifted to the left/right.
+Ortholinear means that the keys are arranged in a matrix layout. On a normal QWERTY keyboard the keys are staggered and are arranged like bricks in a wall.
 
 ## General thoughts
 
-I've used it for a few days now and I'm really enjoying the experience. The form factor allows you to place your hands wherever you want, it also allows you to unplug one side when gaming decreasing the amount of desk space it takes up. The general aesthetic of it is nice as well, I opted for the white version and it looks very clean and modern.
+I've used it for a few days now and I'm really enjoying the experience. The form factor allows you to place your hands wherever you want, it also allows you to unplug one side when gaming to decrease the amount of desk space it takes up. The general aesthetic of it is nice as well, I opted for the white version and it looks very clean and modern.
 
 I went with Cherry MX Blue switches, they're quite nice to type on. The tactile feeling is great but they are quite loud which may be an issue if you're using it at work or school. 
 
-I haven't found the wrist rest very useful. In fact using it makes me feel more fatigued after a longer typing session. Luckily you can detach them or just fold them behind the keyboard. 
+I haven't found the wrist rest very useful. In fact, using it makes me feel more fatigued after a long typing session. Luckily, you can detach them or just fold them behind the keyboard. 
 
 One issue I've had is that it doesn't come with outer legs. This is actually a common complaint online as quite a lot of people want to tent the board. Tenting refers to titling the board in the Y axis so that your hands are angled when typing. You can buy another set of legs from their website, or you 3D print your own set. The issue I'm having is that it can tilt down when pressing keys in the top left/right corners. This isn't a huge issue as most of the time I'm not pressing hard enough to tilt it down.
 
