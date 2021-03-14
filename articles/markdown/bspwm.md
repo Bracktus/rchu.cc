@@ -1,5 +1,5 @@
 ---
-title: my bspwm setup
+title: My bspwm setup
 date: 31-07-2020
 ---
 
@@ -19,7 +19,7 @@ You can also place some startup commands in it.
 Note: bspwm doesn't come with a way to control it. I.e None of your keys will work, you'll need to install a hotkey daemon such as sxhkd to manipulate windows.
 :::
 
-## here's mine
+## Here's mine
 
 ~~~
 
@@ -71,7 +71,7 @@ python3 ~/bin/anime/getJSON.py
 
 ~~~
 
-## so what is it doing?
+## So what is it doing?
 
 ~~~
 
@@ -113,7 +113,7 @@ This first line sets the split ratio. This if you had 1 window and
 opened another this would decide what proportion of the screen the
 second window would occupy.
 
-## what about the rest?
+## What about the rest?
 
 The remainder are startup commands. I\'ll try and cover these in another
 post
