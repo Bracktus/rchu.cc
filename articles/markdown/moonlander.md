@@ -13,8 +13,6 @@ Split means that the keyboard is split into two halves, with a wire connecting t
 
 Ortholinear means that the keys are arranged in a matrix layout. On a normal QWERTY keyboard the keys are shifted to the left/right.
 
-Image of Moonlander, Image of K30.
-
 ## General thoughts
 
 I've used it for a few days now and I'm really enjoying the experience. The form factor allows you to place your hands wherever you want, it also allows you to unplug one side when gaming decreasing the amount of desk space it takes up. The general aesthetic of it is nice as well, I opted for the white version and it looks very clean and modern.
