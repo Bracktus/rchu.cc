@@ -43,7 +43,7 @@ Layers allow you to switch your entire layout at a single key press. I've added 
 - Allow easy access to my window manager hotkeys
 - Move the arrow keys to hjkl
 
-They take a while to get used to, but they allow you to spend a lot more time on the home row and reduces the amount of stretching to access symbols and shortcuts.
+They take a while to get used to, but they allow you to spend a lot more time on the home row and reduces the amount of stretching required to access symbols and shortcuts.
 
 If you're worried about not knowing which layer you're on then you can add per-layer RGB lighting. It's helpful during the earlier stages to remind you where you are.
 
@@ -60,9 +60,9 @@ You can assign them to:
 
 Personally, I've only used 1 and 2 and it's been brilliant.
 
-I've moved **shift** onto **A** so I don't need to move my pinkie to capitalise letters and moved **ctrl** to **;** for the same reason.
+I've moved **Shift** onto **A** so I don't need to move my pinkie to capitalise letters and moved **Ctrl** to **;** for the same reason.
 
-When I need to do **shift+A** or **ctrl+;** I've assigned a second set just below them on the **Z** and **/** . 
+When I need to do **Shift+A** or **Ctrl+;** I've assigned a second set just below them on the **Z** and **/** . 
 
 To trigger them I just need to hold it for a bit longer. This introduces a slight delay when pressing these keys normally but after a while I just got used to it.
 
